@@ -16,6 +16,6 @@ variable "number" {
 
 } 
 
-ouput "number"v{
+ouput "number"{
     value= var.number
 }
