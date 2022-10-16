@@ -8,4 +8,14 @@ output "sample-op" {
 
 output "sample-op1" {
     value = "Value is ${var.sample}"
+} 
+
+
+variable "number" {
+    default = 100 
+
+} 
+
+ouput "number"v{
+    value= var.number
 }
