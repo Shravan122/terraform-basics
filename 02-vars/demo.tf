@@ -51,3 +51,18 @@ variable "ex-map" {
 output "ex-map" {
     value = "Welcome to ${var.ex-map["Class"]} Training and the duration of the training is ${var.ex-map["Duration"]} hours and the schedule time ${var.ex-map["Batch"]}  "
 } 
+
+# Declaring an empty variable
+variable "City" {}
+
+output "city" {
+    value = "City name is ${var.City}"
+}
+
+# Declaring an empty variable 
+
+variable "State" {}
+
+output "state" {
+    value = var.State
+}
