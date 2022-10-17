@@ -1,1 +1,2 @@
-City = "Raichur"
+City = "Raichur" 
+State = "Karnataka"
