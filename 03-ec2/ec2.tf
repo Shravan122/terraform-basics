@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "demo" {
   ami                        = "ami-00ef5054fab40ba04"
   instance_type              = "t2.micro" 
-   vpc_security_group_ids    = [aws_security_group.allow_ssh.id]
+  vpc_security_group_ids    = [aws_security_group.allow_ssh.id]
 
 
   tags = {
@@ -20,7 +20,7 @@ output "public_ip" {
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow SSH inbound traffic"
-  vpc_id      = aws_vpc.main.id
+  
 
   ingress {
     description      = "SSH from INTERNET"
