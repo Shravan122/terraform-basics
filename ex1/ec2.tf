@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "demo1" {
-  ami                       = "ami-05317b7d9de33d0b8"
+  ami                       = "ami-00ef5054fab40ba04"
   instance_type             = "t2.micro"
   vpc_security_group_ids    = [aws_security_group.allows_ssh.id]
 
