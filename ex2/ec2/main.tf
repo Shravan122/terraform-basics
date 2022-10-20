@@ -4,7 +4,7 @@ resource "aws_instance" "demo1" {
   vpc_security_group_ids    = [var.sg]
 
   tags     = {
-    Name   = "EC2-Terraform"
+    Name   = "Frontend"
   } 
 
    provisioner "remote-exec" {
